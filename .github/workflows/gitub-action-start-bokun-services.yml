@@ -13,4 +13,6 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        script: systemctl stop BokunTicketSender.service
+        script: |
+              systemctl stop BokunTicketSender.service
+              systemctl start BokunTicketSender.service
