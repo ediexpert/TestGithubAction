@@ -1,4 +1,4 @@
-name: Restrat Bokun Services
+name: Restrat Bokun Ticket Sender Services
 on: [push]
 jobs:
 
@@ -16,7 +16,3 @@ jobs:
         script: |
               systemctl stop BokunTicketSender.service
               systemctl start BokunTicketSender.service
-              systemctl stop BokunPaymentLink.service
-              systemctl start BokunPaymentLink.service
-              systemctl stop BokunPaymentChecker.service
-              systemctl start BokunPaymentChecker.service
