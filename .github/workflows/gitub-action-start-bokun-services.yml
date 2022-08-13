@@ -16,3 +16,7 @@ jobs:
         script: |
               systemctl stop BokunTicketSender.service
               systemctl start BokunTicketSender.service
+              systemctl stop BokunPaymentLink.service
+              systemctl start BokunPaymentLink.service
+              ystemctl stop BokunPaymentChecker.service
+              ystemctl start BokunPaymentChecker.service
